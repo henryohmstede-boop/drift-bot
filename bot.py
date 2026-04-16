@@ -8,9 +8,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOKEN = os.getenv("DISCORD_TOKEN")
-API_KEY = os.getenv("BRAWL_API_KEY")
-MAIN_CLUB_TAG = os.getenv("CLUB_TAG", "").upper()
+TOKEN = os.getenv("DISCORD_TOKEN", "").strip()
+API_KEY = os.getenv("BRAWL_API_KEY", "").strip()
+MAIN_CLUB_TAG = os.getenv("CLUB_TAG", "").strip().upper()
 ROLE_NAME = "Drifter"
 VERIFIED_ROLE = "Verified"
 
